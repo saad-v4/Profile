@@ -1,0 +1,361 @@
+:root {
+    --primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --primary-dark: #667eea;
+    --secondary: #f093fb;
+    --accent: #ec4899;
+    --dark: #1f2937;
+    --light: #f9fafb;
+    --text-light: #f3f4f6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.head {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    border-radius: 0;
+    padding: 20px 0;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+    z-index: 100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.profile-section {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    padding: 40px 20px;
+    background: rgba(51, 65, 85, 0.4);
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Profile-img {
+    margin: 0 auto 30px auto;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    background: var(--primary);
+    padding: 4px;
+    text-align: center;
+}
+
+.Profile-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: white;
+    display: block;
+}
+
+.Profile-info h1 {
+    color: #fff;
+    font-size: 2.2rem;
+    margin: 20px 0 10px 0;
+    font-weight: 700;
+}
+
+.Profile-info p {
+    color: #cbd5e1;
+    font-size: 1rem;
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+.Profile-info, .info {
+    text-align: center;
+    color: #cbd5e1;
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-shadow: none;
+}
+
+.Instagram {
+    width: 280px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    text-align: center;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 50px;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin: 0 auto 40px auto;
+    font-weight: 600;
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+    border: none;
+    cursor: pointer;
+}
+
+.Instagram:hover {
+    background: linear-gradient(135deg, #764ba2 0%, #f093fb 100%);
+    -webkit-transform: translateY(-3px) scale(1.05);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 12px 30px rgba(240, 147, 251, 0.5);
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+    z-index: -1;
+}
+
+.cards-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    padding: 40px 20px;
+    color: #1f2937;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto 60px auto;
+}
+
+.info-card {
+    background: rgba(51, 65, 85, 0.6);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(102, 126, 234, 0.3);
+    margin-bottom: 0;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    border-top: 4px solid transparent;
+    background-image: linear-gradient(rgba(51, 65, 85, 0.6), rgba(51, 65, 85, 0.6)), 
+                      linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-clip: padding-box, border-box;
+    -webkit-background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+.info-card:hover {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(102, 126, 234, 0.4);
+    border-top: 4px solid #f093fb;
+}
+
+.info-card h2 {
+    color: #fff;
+    font-size: 1.6rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 12px;
+    font-weight: 600;
+}
+
+.info-card p, .info-card li {
+    color: #cbd5e1;
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+.info-card strong {
+    color: #f093fb;
+    font-weight: 600;
+}
+
+.info-card ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.info-card li {
+    margin-bottom: 8px;
+}
+
+.info-card hr {
+    border: none;
+    border-top: 1px solid rgba(102, 126, 234, 0.3);
+    margin: 15px 0;
+}
+
+@media (max-width: 768px) {
+    .head {
+        padding: 15px 0;
+        font-size: 1.5rem;
+        letter-spacing: 0.5px;
+    }
+
+    .profile-section {
+        margin-top: 80px;
+        margin-bottom: 40px;
+        padding: 30px 15px;
+        max-width: 100%;
+        border-radius: 15px;
+    }
+
+    .Profile-img {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto 20px auto;
+    }
+
+    .Profile-info h1 {
+        font-size: 1.8rem;
+        margin: 15px 0 8px 0;
+    }
+
+    .Profile-info p {
+        font-size: 0.9rem;
+        margin: 6px 0;
+    }
+
+    .Instagram {
+        width: 95%;
+        padding: 12px 30px;
+        font-size: 0.95rem;
+    }
+
+    .cards-section {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 25px 15px;
+        max-width: 100%;
+        margin: 0 0 40px 0;
+    }
+
+    .info-card {
+        padding: 25px;
+        border-radius: 12px;
+    }
+
+    .info-card h2 {
+        font-size: 1.3rem;
+        margin-bottom: 12px;
+        padding-bottom: 10px;
+    }
+
+    .info-card p, .info-card li {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 480px) {
+    .head {
+        padding: 12px 0;
+        font-size: 1.2rem;
+        letter-spacing: 0px;
+    }
+
+    .profile-section {
+        margin-top: 70px;
+        margin-bottom: 30px;
+        padding: 20px 10px;
+        border-radius: 12px;
+    }
+
+    .Profile-img {
+        width: 120px;
+        height: 120px;
+        margin: 0 auto 15px auto;
+        padding: 3px;
+    }
+
+    .Profile-info h1 {
+        font-size: 1.5rem;
+        margin: 12px 0 6px 0;
+    }
+
+    .Profile-info p {
+        font-size: 0.85rem;
+        margin: 4px 0;
+    }
+
+    .Profile-info, .info {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .Instagram {
+        width: 90%;
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        margin: 0 auto 30px auto;
+    }
+
+    .cards-section {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 15px 10px;
+        margin: 0 0 30px 0;
+    }
+
+    .info-card {
+        padding: 18px;
+        border-radius: 10px;
+    }
+
+    .info-card h2 {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+        padding-bottom: 8px;
+    }
+
+    .info-card p, .info-card li {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+
+    .info-card hr {
+        margin: 10px 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .cards-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@supports (backdrop-filter: blur(10px)) {
+    .profile-section,
+    .info-card {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+}
+
+@supports not (backdrop-filter: blur(10px)) {
+    .profile-section,
+    .info-card {
+        background: rgba(51, 65, 85, 0.8);
+    }
+}
